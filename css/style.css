@@ -36,23 +36,32 @@ body {
   border-bottom: 4px solid #5BC2DC;
   padding-bottom: 10px;
 }
+
+.square_menu {
+  position: relative;
+  left: -119px;
+}
 .square {
+  width: 13px;
+  position: absolute;
+  top: 24px;
+  left: 30px;
+  transform: translate(-50%, -50%);
+  padding-bottom: 28px;
+  padding-left: 80px;
+    filter: alpha(opacity=100);
+  -moz-opacity:100;
+  opacity:100;
+}
+.square:hover {
+  filter: alpha(opacity=0);
+  -moz-opacity:0;
+  opacity:0;
+}
+.square_color {
   width: 13px;
   margin-left: 15px;
   position: relative;
-  overflow: hidden;
-}
-.square_color {
-  cursor: pointer;
-  width: 13px;
-  position: absolute;
-  top: 27px;
-  left: 1480px;
-  transform: translate(-50%, -50%);
-}
-.square_color:hover {
-  opacity: 0;
-  transition: opacity 1s;
 }
 
 main {
